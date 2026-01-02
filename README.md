@@ -1,9 +1,47 @@
-1 - sudo -i
-# Написать рут пароль
-2 - apt update
-3 - apt install -y dnsutils
-4 - apt install -y dnsutils bind9-dnsutils 
-(если не работает 3. Для более новых версий убунды)
-5 - apt install -y iptables
-6 - bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/installer.sh)
-далее установка
+## 🚀 Быстрая установка веб-панели Pterodactyl
+
+Инструкция подходит для Ubuntu (в т.ч. новых версий).
+
+### 🔐 Переход в root
+
+```bash
+sudo -i
+```
+
+Введите **root-пароль**.
+
+### 🔄 Обновление системы
+
+```bash
+apt update
+```
+
+### 🌐 Установка DNS-утилит
+
+Для большинства систем:
+
+```bash
+apt install -y dnsutils
+```
+
+Если команда выше **не работает** (актуально для новых версий Ubuntu):
+
+```bash
+apt install -y dnsutils bind9-dnsutils
+```
+
+### 🔥 Установка iptables
+
+```bash
+apt install -y iptables
+```
+
+### 📦 Запуск установщика Pterodactyl
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/installer.sh)
+```
+
+### ⚙️ Далее
+
+Следуйте инструкциям установщика на экране для завершения установки панели.
